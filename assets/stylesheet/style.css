@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+.top-bar {
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+}
+.main-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+header {
+  background: gray;
+}
+.navbar {
+  display: flex;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+.nav ul li a {
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+}
