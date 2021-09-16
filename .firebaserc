@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "stayup-gymnasium-27538"
-  }
+    "y": "gym-project-99b48",
+    "default": "gym-project-99b48",
+    "/": "stay-up-gym",
+    "staging": "stay-up-gym"
+  },
+  "targets": {}
 }

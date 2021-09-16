@@ -2,14 +2,29 @@ body {
   margin: 0;
   padding: 0;
 }
-.banner {
-  content: '';
+header {
   background: url('/assets/images/anastase-maragos.jpg') no-repeat center
     center/cover;
-  height: 55vh;
+}
+.banner {
+  content: '';
+  height: 50vh;
   position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 0px;
+}
+
+.banner-heading h1 {
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background: gray;
   opacity: 0.8;
-  z-index: -1;
 }
 .nav {
   margin: auto;
@@ -109,4 +124,23 @@ h2 {
   margin: auto;
   color: #fff;
 }
- 
+.carousel-custom {
+  display: flex;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel-track {
+  display: flex;
+}
+.carousel-track li {
+  list-style: none;
+  display: flex;
+}
+.carousel-img {
+  width: 100%;
+}
+.carousel-track {
+  background: chocolate;
+  padding: 10px;
+}
