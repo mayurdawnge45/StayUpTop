@@ -2,33 +2,153 @@ body {
   margin: 0;
   padding: 0;
 }
-.header-container {
-  width: 100%;
-  max-width: 1280px;
-  margin: auto;
-}
-.top-bar {
-  color: #fff;
-  text-align: right;
-  padding: 10px;
-}
-.main-container {
-  width: 100%;
-  max-width: 1280px;
-  margin: auto;
-}
 header {
-  background: gray;
+  background: url('/assets/images/anastase-maragos.jpg') no-repeat center
+    center/cover;
 }
-.navbar {
+.banner {
+  content: '';
+  height: 50vh;
+  position: relative;
+  z-index: 1;
   display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 0px;
 }
-.nav ul {
+
+.banner-heading h1 {
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background: gray;
+  opacity: 0.8;
+}
+#navbar {
+  background: #ec644a;
+  display: none;
+}
+#navbar a {
+  color: #fff;
+}
+.ham-1 {
+  border-radius: 8px;
+  width: 35px;
+  margin: 7px 0px;
+  position: relative;
+  right: 3px;
+  bottom: 4px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+}
+.banner-nav {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  background: #ec644a;
+}
+.banner-nav ul {
   list-style: none;
   display: flex;
+  margin: auto;
 }
-.nav ul li a {
+.banner-nav ul li a {
   margin: 20px;
   text-decoration: none;
   color: #fff;
+}
+.about-container {
+  display: flex;
+}
+.aboutus,
+h2 {
+  width: 100%;
+  background: #4a4a4a;
+  color: #848484;
+  display: flex;
+  justify-content: center;
+}
+.aboutus-content {
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+.carousel {
+  width: 100%;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  height: fit-content;
+  /* height: 50vh; */
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-track {
+  display: flex;
+}
+.carousel-track li {
+  list-style: none;
+  display: flex;
+}
+.carousel-img {
+  height: 505.5px;
+}
+#our-staff {
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  background: #4a4a4a;
+  border-radius: 5px solid #eee5e5;
+}
+.carousel-track {
+  background: chocolate;
+  padding: 10px;
+}
+.card-group {
+  background: #4a4a4a !important;
+}
+.card {
+  background: #000000 !important;
+}
+@media only screen and (max-width: 768px) {
+  #navbar {
+    background: #ec644a;
+    display: block;
+  }
+  .banner-nav {
+    display: none;
+  }
+  .about-container {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .aboutus {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    margin: 0px;
+  }
+  .carousel {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    margin: 0px;
+  }
+  .staff-card {
+    color: #fff;
+  }
+  .carousel-img {
+    height: auto;
+  }
 }
